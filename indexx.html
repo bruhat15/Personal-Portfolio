@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Your Resume</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* background-color: rgb(226, 216, 75); */
+    background-image: url("https://wallpaperaccess.com/full/1217335.jpg");
+    color: #555;
+}
+fieldset {
+    width: 387;
+    height: 350;
+    background-color: beige;
+}
+
+a{
+    display: inline;
+    padding: 17px;
+}
+select {
+    display: inline;
+    padding: 17px;
+}
+nav a{
+    display: block;
+    padding: 17px;
+    text-align: center;
+    text-decoration: underline;
+    background-color: #14b5d5;
+}
+nav a:hover {
+    background-color: #555;
+}
+
+nav {
+    background-color: rgb(82, 188, 204);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+h1{
+    color: rgb(208, 246, 152);
+    padding: 1px;
+    margin: 1px;;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2{
+    background-color: hotpink;
+    color: black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+span{
+    color: aqua;
+}
+.resume {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: 0; /* Fix for overflow on smaller screens */
+}
+
+#left-column {
+    background-color: #f0f0f0;
+}
+
+#middle-column {
+    background-color: #e0e0e0;
+}
+
+#right-column {
+    background-color: #d0d0d0;
+}
+
+@media only screen and (max-width:800px) {
+    .resume {
+        flex-direction: column;
+    }
+    .column {
+        width: 50%;
+    }
+}
+.one{
+    background-color: powderblue;
+}
+
+
+.two {
+    background-color: royalblue;
+}
+
+.three {
+    background-color: sienna;
+}
+
+.four {
+    background-color: slateblue;
+}
+
+
+.parent {
+    width: 500px;
+    border: 1px solid red;
+    margin: auto;
+    text-align: center;
+}
+
+.child {
+    border-radius: 10%;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+    </style>
+</head>
+
+<body>
+    <h1 id="Heading" style="text-align: center;">Bruhat Kulkarni</h1> 
+    <marquee bgcolor="red"><a href="https://rvu.edu.in" target="_blank">For RVU website,CLick here</a></marquee>
+    <br>
+    <fieldset>
+        <nav>
+            <ul> 
+                <li> <a href="About RVU.html">About RVU</a></li>
+                <li> <a href="Academics.html">Academics</a></li>
+                <li> <a href="Events.html">Events</a></li>
+                <li> <a href="Blogs.html">Blogs</a></li>
+                <li> <a href="TIFA 2023.html">TIFA 2023</a></li>
+                <li> <a href="Research.html">Research</a></li>
+                <li> <a href="Contact.html">Contact</a></li>
+                <li> <a href="Careers.html">Careers</a></li>
+            </ul>
+        </nav>
+    </fieldset>
+    <fieldset>
+        <div class="resume">
+            <div class="column" id="left-column">
+                <h2>Personal Information</h2>
+                <p>Phone: <a href="tel:+919448326517">+91 9448326517</a></p>
+                <p>Email ✉: <a href="mailto:bruhatbkulkarni.btech23@rvu.edu.in">bruhatbkulkarni.btech23@rvu.edu.in</a><br></p>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Html,CSS,JavaScript</li>
+                    <li>SQL,Python,C++</li>
+                </ul>
+            </div>
+            <div class="column" id="middle-column">
+                <h2>Education</h2>
+                <p>Bachelor of Computer Science and Engineering</p>
+                <p>R V University</p>
+                <p>Graduation: 2027</p>
+                <h2>Work Experience</h2>
+                <p>
+                    <h5>Web Developer Intern</h5>
+                    Google, May 2024 - August 2024
+                    Assisted in designing and developing websites,
+                    including front-end and back-end tasks.
+                    Collaborated with the development team to
+                    implement responsive web designs and optimize user experiences.
+                </p>
+            </div>
+            <div class="column" id="right-column">
+            <h2>Projects</h2>
+                <h3>Online Food Delivering Website</h3>
+                        <p>
+                            Developed a web-based food ordering system for a local restaurant,
+                            allowing customers to browse the menu, place orders, and make secure
+                            online payments. Integrated responsive design and real-time order tracking
+                            for an enhanced dining experience.
+                        </p>
+                        <h3>Portfolio Website</h3>
+                        <p>
+                            Designed and developed a personal portfolio website to showcase my web
+                            design projects. Used HTML, CSS, and JavaScript to create an interactive
+                            and visually appealing site.
+                        </p>
+            </div>
+        </div>
+    </fieldset>
+    
+    <br>
+    <p>
+        <span>About Rvu</span>
+        <h2 style="text-align: left; background-color: #b1b1b1;"><select name="About RVU">
+                <option>RVU at a glance</option>
+                <option>Leadership</option>
+                <option>Faculty</option>
+                <option>Infrastructure</option>
+                <option>Collaborations</option>
+                <option>Disclosures</option>
+                <option>Approvals</option>
+            </select></h2>
+    </p>
+    <br><br>
+    <div class="parent">
+        <div class="child one">One</div>
+        <div class="child two">Two</div>
+        <div class="child three">Three</div>
+        <div class="child four">Four</div>
+    </div>
+</body>
+</html>
